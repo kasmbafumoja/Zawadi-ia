@@ -1,0 +1,4 @@
+npm install
+git add package-lock.json
+git commit -m "Add lockfile for Heroku deployment"
+git push origin main
