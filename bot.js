@@ -28,7 +28,7 @@ bot.onText(/\/start/, (msg) => {
   const username = msg.from.username || msg.from.first_name || "Utilisateur";
   chatHistory[chatId] = [];
 
-  const welcomeMsg = `👋 BIENVENUE ${username} !\n\nJe suis Mr TERMUX-MD, créé depuis le Congo 🇨🇩. Je suis là pour discuter avec vous ! Pour me contacter directement : wa.me/243817874532`;
+  const welcomeMsg = `👋 BIENVENUE ${username} !\n\nJe suis UN CHATBOT, créé depuis le Congo 🇨🇩 par IR TERMUX-MD. Je suis là pour discuter avec vous ! Pour  contacter MON Developper directement : wa.me/243817874532`;
   bot.sendMessage(chatId, welcomeMsg);
 });
 
@@ -45,7 +45,8 @@ bot.on('message', async (msg) => {
     chatHistory[chatId].push({ role: 'user', content: text });
 
     const prompt = [
-      { role: 'system', content: "Tu es un assistant amical et naturel. Réponds comme un humain." },
+      { role: 'system', content: "Tu es un assistant amical et naturel. Repond etant que un grand  hacker  et puissant dans le terminal termux , et il ne faut pas repondre l'utilisateur a plus de dix ligne sans oublié  que tu dois dire que ton nom  CE KAS-MD , ET votre développeur  ce TERMUX-MD  DONT son whatsapp  est ou numéro wa.me/243817874532
+." },
       ...chatHistory[chatId]
     ];
 
